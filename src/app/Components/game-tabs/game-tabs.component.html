@@ -21,7 +21,7 @@
       </p>
       <div class="game-description" [innerHTML]="game.description"></div>
       <p class="game-tabs-votes">
-        <ng-container *ngFor="let rating of game.rating">
+        <ng-container *ngFor="let rating of game.ratings">
           <span *ngIf="rating.title === 'exceptional'">
             <mat-icon class="game-votes-up">thumb_up</mat-icon>
             <span class="game-votes-count">{{ rating.count || 0 }}</span>
